@@ -1,0 +1,17 @@
+[13-Mar-2018 19:25:41 UTC] PHP Notice:  Undefined variable: client in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 95
+[13-Mar-2018 19:25:41 UTC] PHP Fatal error:  Call to a member function data() on null in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 95
+[13-Mar-2018 19:27:04 UTC] PHP Notice:  Undefined variable: client in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 97
+[13-Mar-2018 19:27:04 UTC] PHP Fatal error:  Call to a member function data() on null in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 97
+[13-Mar-2018 19:29:53 UTC] PHP Notice:  Undefined variable: client in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 97
+[13-Mar-2018 19:29:53 UTC] PHP Fatal error:  Call to a member function data() on null in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 97
+[13-Mar-2018 19:34:04 UTC] PHP Notice:  Undefined variable: client in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 97
+[13-Mar-2018 19:34:04 UTC] PHP Fatal error:  Call to a member function data() on null in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 97
+[13-Mar-2018 19:40:30 UTC] PHP Notice:  Undefined variable: client in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 97
+[13-Mar-2018 19:40:30 UTC] PHP Fatal error:  Call to a member function data() on null in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 97
+[13-Mar-2018 19:44:25 UTC] PHP Notice:  Undefined variable: client in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 97
+[13-Mar-2018 19:44:25 UTC] PHP Fatal error:  Call to a member function data() on null in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 97
+[13-Mar-2018 19:45:59 UTC] PHP Notice:  Undefined variable: description in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 81
+[13-Mar-2018 19:45:59 UTC] PHP Notice:  Undefined variable: client in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 85
+[13-Mar-2018 19:45:59 UTC] PHP Fatal error:  Call to a member function data() on null in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 85
+[13-Mar-2018 19:49:14 UTC] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 115
+[13-Mar-2018 21:49:46 UTC] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /home/techopia/keehee.techopialabs.com/Client/template/actions/assign.php on line 115
