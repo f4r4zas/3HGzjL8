@@ -1,4 +1,5 @@
-<?
+<?php
+
 
 $freelancer = new Freelancer();
 
@@ -71,17 +72,17 @@ $editname = basename($_SERVER["REQUEST_URI"]);
 
             	<a href="index.php"><i class='fa fa-dashboard'></i> <span><?php echo $lang['dashboard']; ?></span></a>
 
-            </li>     
+            </li>
 
-            <li class="treeview<?php 
+            <li class="treeview<?php
 
                echo $active = ($basename == 'joblist') ? ' active' : '';   ?>">
 
              <a href="https://keehee.com/jobs.php"><i class='fa fa-align-left'></i> <span><?php echo $lang['jobs']; ?></span></a>
 
-            </li>        
+            </li>
 
-            <li style="display: none;" class="treeview<?php 
+            <li style="display: none;" class="treeview<?php
 
                echo $active = ($basename == 'jobinvite') ? ' active' : '';  echo $active = ($editname == 'viewinvite.php?id='. Input::get('id').'') ? ' active' : ''; ?>">
 
@@ -89,7 +90,7 @@ $editname = basename($_SERVER["REQUEST_URI"]);
 
                 <span class="label label-info pull-right">
 
-                    <?php 	
+                    <?php
 
                      $q1 = DB::getInstance()->get("job", "*", ["AND" => ["freelancerid" => $freelancer->data()->freelancerid, "opened" => 0, "delete_remove" => 0, "invite" => "1"]]);
 
@@ -97,23 +98,23 @@ $editname = basename($_SERVER["REQUEST_URI"]);
 
                      ?></span></a>
 
-            </li>     
+            </li>
 
-            <li class="treeview<?php 
+            <li class="treeview<?php
 
                echo $active = ($basename == 'proposallist') ? ' active' : ''; echo $active = ($editname == 'addproposal.php?id='. Input::get('id').'') ? ' active' : ''; echo $active = ($editname == 'editproposal.php?id='. Input::get('id').'') ? ' active' : ''; echo $active = ($editname == 'viewproposal.php?id='. Input::get('id').'') ? ' active' : ''; ?>">
 
              <a href="proposallist.php"><i class='fa  fa-files-o'></i> <span><?php echo $lang['proposals']; ?></span></a>
 
-            </li>     
+            </li>
 
             <li class="<?php echo $active = ($basename == 'jobassigned') ? ' active' : ''; echo $active = ($editname == 'jobboard.php?a='. Input::get('a').'&id='. Input::get('id').'') ? ' active' : '';?>">
 
             	<a href="jobassigned.php"><i class='fa fa-address-card'></i> <span><?php echo $lang['jobs']; ?> <?php echo $lang['assigned']; ?></span></a>
 
-            </li>    
+            </li>
 
-            <li class="header"><?php echo $lang['membership']; ?> & <?php echo $lang['payments']; ?></li>   
+            <li class="header"><?php echo $lang['membership']; ?> & <?php echo $lang['payments']; ?></li>
 
             <li class="<?php echo $active = ($basename == 'membership') ? ' active' : ''; echo $active = ($editname == 'membership.php?id='. Input::get('id').'') ? ' active' : ''; ?>">
 
@@ -133,7 +134,7 @@ $editname = basename($_SERVER["REQUEST_URI"]);
 
               </ul>
 
-            </li> 
+            </li>
 
             <li class="treeview<?php echo $active = ($basename == 'withdraw') ? ' active' : ''; echo $active = ($editname == 'withdraw.php?id='. Input::get('id').'') ? ' active' : '';  echo $active = ($basename == 'schedule') ? ' active' : ''; ?>">
 
@@ -147,23 +148,23 @@ $editname = basename($_SERVER["REQUEST_URI"]);
 
               </ul>
 
-            </li>  
+            </li>
 
             <li class="<?php echo $active = ($basename == 'withpayments') ? ' active' : ''; ?>">
 
             	<a href="withpayments.php"><i class='fa fa-align-left'></i> <span><?php echo $lang['withdrawal']; ?> <?php echo $lang['payments']; ?></span></a>
 
-            </li>          
+            </li>
 
-            <li class="header"><?php echo $lang['sidenav_header_3']; ?></li>          
+            <li class="header"><?php echo $lang['sidenav_header_3']; ?></li>
 
-            <li class="treeview<?php 
+            <li class="treeview<?php
 
                echo $active = ($basename == 'overview') ? ' active' : '';   ?>">
 
              <a href="overview.php?a=profile"><i class='fa fa-info-circle'></i> <span><?php echo 'Profile'; ?></span></a>
 
-            </li> 
+            </li>
 
             <li style="display: none;" class="treeview<?php echo $active = ($basename == 'portfoliolist') ? ' active' : ''; echo $active = ($basename == 'addportfolio') ? ' active' : ''; echo $active = ($editname == 'editportfolio.php?id='. Input::get('id').'') ? ' active' : ''; ?>">
 
@@ -177,7 +178,7 @@ $editname = basename($_SERVER["REQUEST_URI"]);
 
               </ul>
 
-            </li>  
+            </li>
 
             <li style="display: none;" class="treeview<?php echo $active = ($basename == 'servicelist') ? ' active' : ''; echo $active = ($basename == 'addservice') ? ' active' : ''; echo $active = ($editname == 'editservice.php?id='. Input::get('id').'') ? ' active' : ''; ?>">
 
@@ -203,17 +204,17 @@ $editname = basename($_SERVER["REQUEST_URI"]);
 
 		if ($query->count()) {
 
-		 foreach($query->results() as $row) {	        
+		 foreach($query->results() as $row) {
 
-	        $membershipid = $row->membershipid; 
+	        $membershipid = $row->membershipid;
 
-		 
+
 
 		   }
 
-          }	
+          }
 
-			
+
 
 	        $q = DB::getInstance()->get("membership_freelancer", "*", ["membershipid" => $membershipid]);
 
@@ -235,15 +236,15 @@ $editname = basename($_SERVER["REQUEST_URI"]);
 
 				 }
 
-				} 		 		 
+				}
 
-	        ?>		
+	        ?>
 
-         
+
 
          <?php if($team_membership === '1'): ?>
 
-             
+
 
             <li class="treeview<?php echo $active = ($basename == 'teamlist') ? ' active' : ''; echo $active = ($basename == 'addteam') ? ' active' : ''; echo $active = ($editname == 'editteam.php?id='. Input::get('id').'') ? ' active' : ''; ?>">
 
@@ -257,15 +258,15 @@ $editname = basename($_SERVER["REQUEST_URI"]);
 
               </ul>
 
-            </li>	
+            </li>
 
-            	  		    
 
-		  <? endif; ?>
 
-		  
+		  <?php endif; ?>
 
-            <li style="display: none;" class="header"><?php echo $lang['sidenav_header_4']; ?></li>   
+
+
+            <li style="display: none;" class="header"><?php echo $lang['sidenav_header_4']; ?></li>
 
             <li style="display: none;" class="treeview<?php echo $active = ($basename == 'inbox') ? ' active' : ''; echo $active = ($basename == 'compose') ? ' active' : ''; echo $active = ($basename == 'sent') ? ' active' : ''; echo $active = ($basename == 'favorite') ? ' active' : ''; echo $active = ($basename == 'trash') ? ' active' : ''; echo $active = ($editname == 'message.php?id='. Input::get('id').'') ? ' active' : '';?>">
 
@@ -275,7 +276,7 @@ $editname = basename($_SERVER["REQUEST_URI"]);
 
                 <span class="label label-info pull-right" style="margin-right: 20px;">
 
-                    <?php 	
+                    <?php
 
                      $q1 = DB::getInstance()->get("message", "*", ["AND" => ["user_to" => $freelancer->data()->freelancerid, "opened" => 0, "delete_remove" => 0, "disc" => 0]]);
 
@@ -289,11 +290,11 @@ $editname = basename($_SERVER["REQUEST_URI"]);
 
               <ul class="treeview-menu">
 
-                <li class="active"><a href="inbox.php"><?php echo $lang['inbox']; ?> 
+                <li class="active"><a href="inbox.php"><?php echo $lang['inbox']; ?>
 
                 <span class="label label-info pull-right">
 
-                    <?php 	
+                    <?php
 
                      $q1 = DB::getInstance()->get("message", "*", ["AND" => ["user_to" => $freelancer->data()->freelancerid, "opened" => 0, "delete_remove" => 0, "disc" => 0]]);
 
@@ -307,7 +308,7 @@ $editname = basename($_SERVER["REQUEST_URI"]);
 
             </li>
 
-          
+
 
           </ul><!-- /.sidebar-menu -->
 

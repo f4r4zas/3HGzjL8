@@ -1,7 +1,5 @@
 <?php
 
-
-
 //Get Site Settings Data
 
 $query = DB::getInstance()->get("settings", "*", ["id" => 1]);
@@ -214,7 +212,7 @@ if ($q2->count()) {
 
 		<script src="/js/modernizr-custom.js"></script>
 
-		
+		<script src="assets/js/list.min.js"></script>
 
 		<!--[if lt IE 9]>
 

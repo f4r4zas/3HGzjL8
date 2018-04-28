@@ -14,8 +14,6 @@ if(!file_exists('../core/init.php')){
 
 }
 
-
-
 //Start new Freelancer object
 
 $freelancer = new Freelancer();
@@ -70,13 +68,13 @@ membership($freelancer->data()->freelancerid);
 
         <!-- Include navigation.php. Contains navigation content. -->
 
-	 	<?php include ('template/navigation.php'); ?> 
+	 	<?php include ('template/navigation.php'); ?>
 
-        <!-- Include sidenav.php. Contains sidebar content. -->
+        <!-- Include sidenav.php. Contains sidebar contents. -->
 
-	 	<?php include ('template/sidenav.php'); ?> 
+	 	<?php include_once ('template/sidenav.php'); ?>
 
-	 	
+
 
 	 	  <!-- Content Wrapper. Contains page content -->
 

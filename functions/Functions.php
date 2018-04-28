@@ -1,8 +1,10 @@
 <?php
-
 include_once 'TruncateHTML.php';
+include_once 'distance.php';
 
 //Ratings
+
+
 function ratings($star){
 	
 	

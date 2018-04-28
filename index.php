@@ -1,16 +1,18 @@
 <?php
 
+
+
 //Check if init.php exists
 
 if(!file_exists('core/frontinit.php')){
 
-	header('Location: install/');        
+	header('Location: install/');
 
     exit;
 
 }else{
 
- require_once 'core/frontinit.php';	
+ require_once 'core/frontinit.php';
 
 }
 
@@ -61,13 +63,13 @@ if ($query->count()) {
 
 <!--[if (gte IE 9)|!(IE)]><!-->
 
-<html lang="en"> 
+<html lang="en">
 
 <!--<![endif]-->
 
     <!-- Include header.php. Contains header content. -->
 
-    <?php include ('includes/template/header.php'); ?> 
+    <?php include ('includes/template/header.php'); ?>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
 <style>
@@ -87,34 +89,34 @@ section.after_banner .welcome_box {
         width: 100%;
         height: auto;
     }
-    
+
     .bx-wrapper img {
         width: 100%;
     }
-    
+
     .bx-viewport{
         max-height: 547px;
     }
-    
+
     .slide-content.container {
         width: 100%;
-        left: 0; 
+        left: 0;
         /*background: rgba(0,0,0,0.4);*/
         background: rgba(0,0,0,0.2);
         padding: 0px 45px;
     }
-    
+
     h3.editable_w.section_3 {
         font-size: 25px;
     }
-    
+
     .editable_w.section_3 {
         margin: 0;
         font-size: 19px;
         line-height: 52.5px;
     }
-    
-    
+
+
     .editable_w.section_3.bgyello {
         background: transparent;
         font-size: 33px !important;
@@ -140,63 +142,63 @@ section.after_banner .welcome_box {
 
 <body class="greybg">
 
-	
+
 
      <!-- Include navigation.php. Contains navigation content. -->
 
- 	 <?php include ('includes/template/navigation.php'); ?> 
+ 	 <?php include ('includes/template/navigation.php'); ?>
 
- 	 
+
 
       <!-- ==============================================
 
 	 Header
 
-	 =============================================== -->	 
+	 =============================================== -->
 <div class="sli1">
 <div class="slider" style="width: 10792px; left: 0px; display: block; transition: all 1000ms ease 0s; transform: translate3d(0px, 0px, 0px);">
 <div class="owl-item" style="width: 1349px;">
-		<div class="item"> 
+		<div class="item">
 		<img src="/assets/img/header/1489406013.jpg" alt="The Last of us">
 		<div class="slide-content container">
 		<h3 class="fruite">KeeHee.com is a lead generation platform design to accommodate</h3>
-	
+
 		<h1 class="large">
 		Customers, local businesses and professional individuals with common interest </h3>
 		</h1>
-			<h3 class="fruite">	
+			<h3 class="fruite">
 			 to conduct business with <b>“No Negotiating and No Hassle!”</b>
-		
+
 		</div>
 		</div>
 
 </div>
 <div class="owl-item" style="width: 1349px;">
-		<div class="item"> 
+		<div class="item">
 		<img src="/assets/img/header/141028-cpi-kentucky-tease_oxowsq.jpg" alt="The Last of us">
 		<div class="slide-content container">
 		<h3 class="fruite">For Customers who don’t want to over spend for services</h3>
 		<h1 class="large">SET YOUR BUDGET, POST YOUR AD AND HIRE THE PERFECT HELP!</h1>
 		<h3 class="fruite">You have the money, you’re the boss!</h3>
-		
+
 		</div>
 		</div>
 
 </div>
 <div class="owl-item" style="width: 1349px;">
-		<div class="item"> 
+		<div class="item">
 		<img src="/assets/img/header/wiki-Office-Business-Park-1920x1080-PIC-WPC008189.jpg" alt="The Last of us">
 		<div class="slide-content container">
 		<h3 class="fruite">Are you a local business, marketers or a recruiter? </h3>
 		<h1 class="large">SAVE OVER $1,500 PER YEAR ON ADVERTISEMENTS</h1>
 		<h3 class="fruite">Customers need your services, just click “Provide Service” and sign-up for FREE.</h3>
-	
+
 		</div>
 		</div>
 
 </div>
 <div class="owl-item" style="width: 1349px;">
-		<div class="item"> 
+		<div class="item">
 		<img src="/assets/img/header/1_bAsgRTQEgioxvbv0ztVbfw.jpg" alt="The Last of us">
 		<div class="slide-content container">
 		<h3 class="fruite">You don’t own a business, but have great skill set?</h3>
@@ -207,9 +209,9 @@ section.after_banner .welcome_box {
 
 </div>
 </div>
-	
-</div>	
-	 
+
+</div>
+
 	<!--
 	 <header class="header" style="
 
@@ -217,7 +219,7 @@ section.after_banner .welcome_box {
 
     background: linear-gradient(
 
-      rgba(34,34,34,0.5), 
+      rgba(34,34,34,0.5),
 
       rgba(34,34,34,0.5)
 
@@ -239,7 +241,7 @@ section.after_banner .welcome_box {
 
   width: 100%;
 
-  
+
 
   display: flex;
 
@@ -249,8 +251,8 @@ section.after_banner .welcome_box {
 
   align-items: center;
 
-  text-align: center;	 	
-		 
+  text-align: center;
+
 	 <?php }else{ ?>
 
   background: url('<?php echo $header_img; ?>') repeat 50% 0;
@@ -261,7 +263,7 @@ section.after_banner .welcome_box {
 
   width: 100%;
 
-  
+
 
   display: flex;
 
@@ -277,7 +279,7 @@ section.after_banner .welcome_box {
 
       <div class="container">
 
-	   
+
 
         <div class="row">
 
@@ -289,15 +291,15 @@ section.after_banner .welcome_box {
 
 		<h3 class="banner-description"><?php echo $down_title; ?></h3>
 
-       	<?php endif; ?> 
+       	<?php endif; ?>
 
-		
+
 
 		 <form action="searchpage.php" method="get" class="list-s">
 
 		  <button><?php echo $lang['get']; ?> <?php echo $lang['a']; ?> <?php echo $lang['quote']; ?></button>
 
-		  <input type="text" class="form-control" name="searchterm" placeholder="<?php echo $searchterm; ?>" value=""/>   
+		  <input type="text" class="form-control" name="searchterm" placeholder="<?php echo $searchterm; ?>" value=""/>
 
 		  <div class="clearfix"></div>
 
@@ -307,11 +309,11 @@ section.after_banner .welcome_box {
 
         <?php
 
-				
+
 
 	        $dbc = mysqli_connect(Config::get('mysql/host'), Config::get('mysql/username'), Config::get('mysql/password'), Config::get('mysql/db')) OR die('Could not connect because:' .mysqli_connect_error());
 
-			
+
 
 			$q5 = "SELECT catid, count(catid) AS cnt FROM job GROUP BY catid ORDER BY cnt DESC LIMIT 3";
 
@@ -321,13 +323,13 @@ section.after_banner .welcome_box {
 
 				$catid = $row5['catid'];
 
-				
+
 
           $query = DB::getInstance()->get("category", "*", ["catid" => $catid]);
 
 		 if($query->count()) {
 
-		 	
+
 
 		    $x = 1;
 
@@ -335,7 +337,7 @@ section.after_banner .welcome_box {
 
 			foreach($query->results() as $row) {
 
-                
+
 
 		 //Start new Admin object
 
@@ -347,11 +349,11 @@ section.after_banner .welcome_box {
 
 		 //Start new Freelancer object
 
-		 $freelancer = new Freelancer(); 
+		 $freelancer = new Freelancer();
 
 
 
-		 if ($admin->isLoggedIn() || $client->isLoggedIn() || $freelancer->isLoggedIn()) { 				
+		 if ($admin->isLoggedIn() || $client->isLoggedIn() || $freelancer->isLoggedIn()) {
 
 			     $List .= '
 
@@ -372,22 +374,22 @@ section.after_banner .welcome_box {
 					   </a>
 
 						 ';
-            
-        } 
 
-				 $lists[] = $List;		 
+        }
+
+				 $lists[] = $List;
 
                  array_push($out, $List);
 
-	             unset($List);	 
+	             unset($List);
 
-				 $x++;		
+				 $x++;
 
-				
 
-			}			
 
-		
+			}
+
+
 
 				}
 
@@ -395,23 +397,23 @@ section.after_banner .welcome_box {
 
 
 
-			 }	
+			 }
 
              echo $string = implode(',', $lists);
 
         ?>			</p>
 
-        
+
 
 		</div>
 
         </div><!--./row -->
 
-        
+
 
 	  </div><!--./container -->
 
-     </header><!--./header -->	
+     </header><!--./header -->
 
       <!-- ==============================================
 
@@ -432,7 +434,7 @@ section.after_banner .welcome_box {
 						</div>
 					</div>
 					</div>
-					
+
 			 		<div class="col-md-6 box122">
 					<div class="welcome_box">
 					<ul class='tabs nav nav-pills'>
@@ -448,7 +450,7 @@ section.after_banner .welcome_box {
                         <a href="register.php" style="padding: 11px; color: #fff;" class="siginupbtn">Sign-up for FREE</a>
 					</div>
 					<div id='tab2' class=" bgblck">
-					<div class="heading">KeeHee is perfect for you:</div>					
+					<div class="heading">KeeHee is perfect for you:</div>
 					<p>Local businesses, marketers and recruiters prefer KeeHee because they can save time and money on marketing and promotions packages while focusing more on what they do best, which is providing excellent service to extraordinary customers.</p>
 					  <!--<input type="button" value="SignUp" class="siginupbtn">-->
                       <a href="register.php?type=business" style="padding: 11px; color: #fff;" class="siginupbtn">Sign-up for FREE</a>
@@ -468,14 +470,14 @@ section.after_banner .welcome_box {
 								<input type="text" name="email" id="email" class="theme-input">
 								<input type="button" value="Subscribe!" class="theme-btn">
 							</div>
-						</div> 
+						</div>
 						-->
 					</div>
 				</div>
 			 </div>
 		</div>
 	</section>
-	 
+
 	 <!-- ======================= -->
 <?php
 
@@ -489,16 +491,16 @@ section.after_banner .welcome_box {
 
 		 //Start new Freelancer object
 
-		 $freelancer = new Freelancer(); 
+		 $freelancer = new Freelancer();
 
-		 
+
 
 		 if ($admin->isLoggedIn()) { ?>
 
 		<?php } elseif($freelancer->isLoggedIn()) { ?>
 
 		<?php } elseif($client->isLoggedIn()) { ?>
-        
+
         <section class="we-perfect" style="background: #fff;">
 				<div class="container">
             <div class="row">
@@ -523,7 +525,7 @@ section.after_banner .welcome_box {
          </section>
 
 		<?php } else { ?>
-        
+
         <section style="background: #fff; padding: 20px;">
 				<div class="container">
             <div class="row">
@@ -554,7 +556,7 @@ section.after_banner .welcome_box {
 
        <div class="row">
 
-       	
+
 
        	<div class="text-center">
 
@@ -564,13 +566,13 @@ section.after_banner .welcome_box {
 
 		 <p class="top-p"><?php echo $cattagline; ?></p>
 
-		</div> 
+		</div>
 
        </div><!-- /.row -->
 
        <br />
 
-       
+
 
 		  <?php
 
@@ -578,7 +580,7 @@ section.after_banner .welcome_box {
 
 		 if($query->count()) {
 
-		 	
+
 
           /*
 
@@ -593,35 +595,35 @@ section.after_banner .welcome_box {
 		    $x = 1;
 
 			foreach($query->results() as $row) {
-			 
+
              //$subsquery = DB::getInstance()->get("skills", "*", ["ORDER" => "id ASC"]);
-             
+
              $subs = explode(',',$row->sub_category);
 			 foreach($subs as $sub){
 			     if(strtolower(trim($sub)) != "other" && strtolower(trim($sub)) != "others"){
     			    $jobUpdate = DB::getInstance()->update('skills',[
-    
+
             		   'name' => trim($sub),
-            
+
             		   'catid' => $row->id,
-            
+
             		   'date_added' => date('Y-m-d H:i:s'),
-            
+
             		   'active' => 1,
-            
+
             		   'delete_remove' => 0
-            
+
             		],[
-            
+
             		    'id' => $x
-            
-            		  ]); 
-                      
+
+            		  ]);
+
                        $x++;
 			     }
-             
+
              }
-             
+
 
 		    $List = '';
 
@@ -629,9 +631,9 @@ section.after_banner .welcome_box {
 
               Check whether we need to add the start of a new row.
 
-              If true, echo a div with the "row" class and set the startRow variable to false 
+              If true, echo a div with the "row" class and set the startRow variable to false
 
-              If false, do nothing. 
+              If false, do nothing.
 
             */
 
@@ -641,11 +643,11 @@ section.after_banner .welcome_box {
 
               $startRow = false;
 
-            } 
+            }
 
-            /* Add one to the counter because a new post is being added to your page.  */ 
+            /* Add one to the counter because a new post is being added to your page.  */
 
-              $postCounter += 1; 
+              $postCounter += 1;
 
 
 
@@ -659,7 +661,7 @@ section.after_banner .welcome_box {
 
 		 //Start new Freelancer object
 
-		 $freelancer = new Freelancer(); 
+		 $freelancer = new Freelancer();
 
 
 
@@ -682,9 +684,9 @@ section.after_banner .welcome_box {
 					</div>  
 
 					 ';
-                     
+
          } else {
-            
+
             echo $List .= '
 
 			        <div class="col-lg-4 col-md-4 col-sm-12 randombg">
@@ -702,24 +704,24 @@ section.after_banner .welcome_box {
 					</div>  
 
 					 ';
-            
-         } 
 
-				
+         }
 
-             unset($List);	 
 
-					
 
-			
+             unset($List);
+
+
+
+
 
             /*
 
-            Check whether the counter has hit 3 posts.  
+            Check whether the counter has hit 3 posts.
 
             If true, close the "row" div.  Also reset the $startRow variable so that before the next post, a new "row" div is being created. Finally, reset the counter to track the next set of three posts.
 
-            If false, do nothing. 
+            If false, do nothing.
 
             */
 
@@ -731,7 +733,7 @@ section.after_banner .welcome_box {
 
                 $postCounter = 0;
 
-            }  
+            }
 
 		   }
 
@@ -743,14 +745,14 @@ section.after_banner .welcome_box {
 
        ?>
 
-              
+
 
       </div><!-- /.container -->
 
-     </section><!-- /.section -->     
+     </section><!-- /.section -->
 
 	 <!-- ================================== -->
-	
+
 
 		<?php
 
@@ -764,16 +766,16 @@ section.after_banner .welcome_box {
 
 		 //Start new Freelancer object
 
-		 $freelancer = new Freelancer(); 
+		 $freelancer = new Freelancer();
 
-		 
+
 
 		 if ($admin->isLoggedIn()) { ?>
 
 		<?php } elseif($freelancer->isLoggedIn()) { ?>
 
 		<?php } elseif($client->isLoggedIn()) { ?>
-        
+
         <section style="background: #fff; padding: 20px;">
 				<div class="container">
             <div class="row">
@@ -798,7 +800,7 @@ section.after_banner .welcome_box {
          </section>
 
 		<?php } else { ?>
-        
+
         <section style="background: #fff; padding: 20px;">
 				<div class="container">
             <div class="row">
@@ -822,10 +824,10 @@ section.after_banner .welcome_box {
          </div>
          </section>
 
-		 <?php } ?>	
-			
-	
-	
+		 <?php } ?>
+
+
+
 	<section class="we-perfect">
 				<div class="container">
             <div class="row">
@@ -840,7 +842,7 @@ section.after_banner .welcome_box {
                 <p class="editable_w section_3">Customers and Service Providers unify to conduct business of comment interest and everyone wins!</p>
               </div>
             </div>
-          </div>	
+          </div>
 
 	</section>
 
@@ -875,7 +877,7 @@ section.after_banner .welcome_box {
 					</div>
 				</div>
 
-				
+
 
 				<div class="col-md-6 col-sm-12 col-xs-12 nopading">
 					<div class="heading">Service Providers</div>
@@ -918,7 +920,7 @@ section.after_banner .welcome_box {
 
        <div class="row">
 
-       	
+
 
        	<div class="text-center">
 
@@ -928,7 +930,7 @@ section.after_banner .welcome_box {
 
 		 <p class="top-p"><?php echo $statstagline; ?></p>
 
-		</div> 
+		</div>
 
        </div><!-- /.row -->
 
@@ -936,7 +938,7 @@ section.after_banner .welcome_box {
 
        <?php
 
-       $query = DB::getInstance()->get("job", "*", ["AND"=>["active" => 1, "delete_remove" => 0]]); 
+       $query = DB::getInstance()->get("job", "*", ["AND"=>["active" => 1, "delete_remove" => 0]]);
 
 	   if ($query->count() === '') {
 		   $jobsposted = 0;
@@ -944,9 +946,9 @@ section.after_banner .welcome_box {
 
 		   $jobsposted = $query->count();
 	   }
-	    
 
-       $q1 = DB::getInstance()->get("job", "*", ["AND"=>["active" => 1, "delete_remove" => 0, "completed" => 1]]);  
+
+       $q1 = DB::getInstance()->get("job", "*", ["AND"=>["active" => 1, "delete_remove" => 0, "completed" => 1]]);
 
 	   if ($q1->count() === '') {
 
@@ -956,11 +958,11 @@ section.after_banner .welcome_box {
 
 		   $jobscompleted = $q1->count();
 
-	   }  
+	   }
 
-	   
 
-       $q2 = DB::getInstance()->get("freelancer", "*", ["AND"=>["active" => 1, "delete_remove" => 0]]);  
+
+       $q2 = DB::getInstance()->get("freelancer", "*", ["AND"=>["active" => 1, "delete_remove" => 0]]);
 
 	   if ($q2->count() === '') {
 
@@ -970,11 +972,11 @@ section.after_banner .welcome_box {
 
 		   $freelancercount = $q2->count();
 
-	   }	
+	   }
 
-	   
 
-       $q3 = DB::getInstance()->get("client", "*", ["AND"=>["active" => 1, "delete_remove" => 0]]);  
+
+       $q3 = DB::getInstance()->get("client", "*", ["AND"=>["active" => 1, "delete_remove" => 0]]);
 
 	   if ($q3->count() === '') {
 
@@ -984,57 +986,57 @@ section.after_banner .welcome_box {
 
 		   $clientcount = $q3->count();
 
-	   }	         
+	   }
 
-       
 
-       ?> 
 
-       <div class="row"> 
+       ?>
+
+       <div class="row">
 
 		 <ul class="job-stats row showing-4">
 
           <li class="job-stat col-md-3 col-sm-6 col-xs-12">
 			<div class="thumbnail1"> <img src="/assets/img/service/services.png" alt=""> </div>
-		   <strong><?php echo $jobsposted; ?></strong><?php echo $lang['jobs']; ?> <?php echo $lang['posted']; ?>				
+		   <strong><?php echo $jobsposted; ?></strong><?php echo $lang['jobs']; ?> <?php echo $lang['posted']; ?>
 
 		  </li>
 
 		  <li class="job-stat col-md-3 col-sm-6 col-xs-12">
 <div class="thumbnail1"> <img src="/assets/img/service/a.png" alt=""> </div>
-		   <strong><?php echo $jobscompleted; ?></strong><?php echo $lang['jobs']; ?> <?php echo $lang['completed']; ?>				
+		   <strong><?php echo $jobscompleted; ?></strong><?php echo $lang['jobs']; ?> <?php echo $lang['completed']; ?>
 
 		  </li>
 
 		  <li class="job-stat col-md-3 col-sm-6 col-xs-12">
 <div class="thumbnail1"> <img src="/assets/img/service/b.png" alt=""> </div>
-		   <strong><?php echo $clientcount; ?></strong> <?php echo $lang['clients']; ?>				
+		   <strong><?php echo $clientcount; ?></strong> <?php echo $lang['clients']; ?>
 
 		  </li>
 
 		  <li class="job-stat col-md-3 col-sm-6 col-xs-12">
 <div class="thumbnail1"> <img src="/assets/img/service/c.png" alt=""></div>
-		   <strong><?php echo $freelancercount; ?></strong><?php echo $lang['freelancers']; ?>				
+		   <strong><?php echo $freelancercount; ?></strong><?php echo $lang['freelancers']; ?>
 
 		  </li>
 
 		 </ul>
 
-		 
 
-		</div>  
 
 		</div>
 
-		</section>	 
+		</div>
 
-	 
+		</section>
+
+
 
 	 <!-- ==============================================
 
 	 Testimonies Section
 
-	 =============================================== -->		  
+	 =============================================== -->
 
 
 	 <section class="testimonies">
@@ -1049,29 +1051,29 @@ section.after_banner .welcome_box {
 
 		 <p class="top-p"><?php echo $testtagline; ?></p>
 
-		</div> 
+		</div>
 
        </div><!-- /.row -->
 
        <br />
-       
+
 
 	   <div class="bgmange">
 <div class="slider1" >
- 
-		
-		
+
+
+
 
 
 		  <?php
 
           $query = DB::getInstance()->get("team", "*", ["testimony" => 1]);
-          
+
 
 
 		 if($query->count()) {
 
-		 	
+
 
           /*
 
@@ -1093,9 +1095,9 @@ section.after_banner .welcome_box {
 
               Check whether we need to add the start of a new row.
 
-              If true, echo a div with the "row" class and set the startRow variable to false 
+              If true, echo a div with the "row" class and set the startRow variable to false
 
-              If false, do nothing. 
+              If false, do nothing.
 
             */
 
@@ -1106,13 +1108,13 @@ section.after_banner .welcome_box {
 
               $startRow = false;
 
-            } 
+            }
 
-            /* Add one to the counter because a new post is being added to your page.  */ 
+            /* Add one to the counter because a new post is being added to your page.  */
 
-              $postCounter += 1; 
+              $postCounter += 1;
 
-			  
+
 
 		    echo '
 
@@ -1160,21 +1162,21 @@ section.after_banner .welcome_box {
 
 					 ';
 
-				
 
-             //unset($List);	 
 
-			 $x++;		
+             //unset($List);
 
-			
+			 $x++;
+
+
 
             /*
 
-            Check whether the counter has hit 3 posts.  
+            Check whether the counter has hit 3 posts.
 
             If true, close the "row" div.  Also reset the $startRow variable so that before the next post, a new "row" div is being created. Finally, reset the counter to track the next set of three posts.
 
-            If false, do nothing. 
+            If false, do nothing.
 
             */
             if($postCounter % 3 == 0) {
@@ -1187,7 +1189,7 @@ section.after_banner .welcome_box {
 
                 $postCounter = 0;
 
-            }  
+            }
 
 		   }
 
@@ -1197,12 +1199,12 @@ section.after_banner .welcome_box {
 
 		}
 
-       ?>       
+       ?>
 
-  
+
 
 <!--<div class="owl-item" style="width: 1349px;">
-		
+
 <div class="item">
 2nd testimonial
 
@@ -1212,20 +1214,20 @@ section.after_banner .welcome_box {
 </div>
 	  </div><!-- /container -->
 </div>
-	 </section><!-- /w -->		   	 
+	 </section><!-- /w -->
 
 
 
 
      <!-- Include footer.php. Contains footer content. -->
 
- 	 <?php include ('includes/template/footer.php'); ?> 
+ 	 <?php include ('includes/template/footer.php'); ?>
 
-	 
+
 
      <a id="scrollup">Scroll</a>
 
-	 
+
 
      <!-- ==============================================
 
@@ -1235,25 +1237,25 @@ section.after_banner .welcome_box {
 
      <!-- jQuery 2.1.4 -->
 
-      <script src="assets/js/jQuery-2.1.4.min.js" type="text/javascript"></script> 
+      <script src="assets/js/jQuery-2.1.4.min.js" type="text/javascript"></script>
 
      <!-- Bootstrap 3.3.6 JS -->
 
-     <script src="assets/js/bootstrap.min.js" type="text/javascript"></script> 
+     <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
      <!-- Kafe JS -->
 	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-      <!--<script src="assets/js/kafe.js" type="text/javascript"></script>--> 
+      <!--<script src="assets/js/kafe.js" type="text/javascript"></script>-->
 
 <script>
 
 
 $(document).ready(function() {
     var randomColors = ["#4C2A57","#AB322C","#F1CE40","#396433","#3C5D8C","#EC6E30","#AB322C","#4C2A57","#AB322C","#F1CE40","#396433","#3C5D8C","#EC6E30","#AB322C","#4C2A57","#AB322C","#F1CE40","#396433","#3C5D8C","#EC6E30","#AB322C"];
-    
+
     $(".randombg > a").each(function(index) {
-        
+
         //var len = randomColors.length;
         //var randomNum = Math.floor(Math.random()*len);
         $(this).css("backgroundColor",randomColors[index]);
@@ -1261,7 +1263,7 @@ $(document).ready(function() {
         //Removes color from array so it can't be used again
         //randomColors.splice(randomNum, 1);
     });
-	
+
 	   // var randomColors = ["#4C2A57","#AB322C","#F1CE40"];
     /*$(".categories .row:last-child .randombg > a ").each(function(index) {
         var len = randomColors.length;
@@ -1270,13 +1272,13 @@ $(document).ready(function() {
         //Removes color from array so it can't be used again
         randomColors.splice(randomNum, 1);
     });*/
-	
-	
-	
+
+
+
 });
 
- 
-   
+
+
 
 	$(document).ready(function(){
 		$('.slider').bxSlider({
@@ -1286,8 +1288,8 @@ $(document).ready(function() {
 		});
 
 	});
-	
-	
+
+
 	$(document).ready(function(){
 		$('.slider1').bxSlider({
 		auto: true,
@@ -1337,7 +1339,7 @@ $(document).ready(function() {
     e.preventDefault();
   });
 });
-  
+
 $(document).ready(function() {
     var randomColors = ["#4B2956","#F1CE3F","#3A5B8B"];
     $(".tabs > li > a").each(function(index) {
@@ -1348,8 +1350,8 @@ $(document).ready(function() {
         $(tab+" .siginupbtn").css("backgroundColor",randomColors[randomNum]);
         //Removes color from array so it can't be used again
         randomColors.splice(randomNum, 1);
-       
-        
+
+
     });
 	/*var randomColors = ["#4B2956","#F1CE3F","#3A5B8B"];
     $(".siginupbtn").each(function(index) {
@@ -1359,14 +1361,14 @@ $(document).ready(function() {
         //Removes color from array so it can't be used again
         randomColors.splice(randomNum, 1);
     });*/
-});  
+});
 
 
 
 
 
 
-   
+
 
 
 </script>
